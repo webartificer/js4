@@ -1,30 +1,47 @@
-var victims = prompt("Please enter the number of disaster victims.");
+// VICTIMS //
 
-var arrName = [];
-var arrPhone = [];
-var arrStreet = [];
+var victimName = [];
+var victimPhone = [];
+var victimStreet = [];
 
+var victimCount = prompt("Please enter the number of disaster victims.");
 
-for(var i=0; i<victims; i++) {
-    // Victim Name //
-    var vName = prompt("Please enter your name");
-    arrName.push(vName);
-    console.log(arrName);
+for(var i=0; i<victimCount; i++) {
 
-    // Victim Phone //
-    var vPhone = prompt("Please enter your phone");
-    arrPhone.push(vPhone);
-    console.log(arrPhone);
-
-    // Victim Street //
-    var vStreet = prompt("Please enter your street number");
-    arrStreet.push(vStreet);
-    console.log(arrStreet);
-
-    // Generate Alert //
-    alert("Name: " + arrName[i]+ "\nPhone: " + arrPhone[i] + "\nStreet: " + arrStreet[i]);
+    victimName.push(prompt("Please enter the victim's name"));
+    victimPhone.push(prompt("Please enter the victim's phone"));
+    victimStreet.push(prompt("Please enter the victim's street number"));
 };
 
 
+// VOLUNTEERS //
 
+var volName = [];
+var volPhone = [];
+var volStreet = [];
 
+var volCount = prompt("Please enter the number of disaster volunteers.");
+
+for(var i=0; i<volCount; i++) {
+
+    volName.push(prompt("Please enter the volunteer's name"));
+    volPhone.push(prompt("Please enter the volunteer's phone"));
+    volStreet.push(prompt("Please enter the volunteer's street number"));
+};
+
+// MESSAGE //
+
+var message = "Number of Victims: " + victimCount + "\n" +
+    "Number of Volunteers" + volCount + "\n"
+
+message += "\nVictims\n"
+for(var i=0; i<victimCount; i++) {
+    message += "Name: " + victimName[i]+ "\nPhone: " + victimPhone[i] + "\nStreet: " + victimStreet[i] + "\n"
+}
+
+message += "\nVolunteers\n"
+for(var i=0; i<volCount; i++) {
+    message += "Name: " + volName[i]+ "\nPhone: " + volPhone[i] + "\nStreet: " + volStreet[i] + "\n"
+}
+
+alert(message);
