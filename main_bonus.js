@@ -10,7 +10,7 @@ for(var i=0; i<victimCount; i++) {
 
     arrVictim.push({"name":victimName, "phone":victimPhone, "street":victimStreet});
 
-};
+}
 
 // VOLUNTEERS //
 
@@ -24,7 +24,7 @@ for(var i=0; i<volCount; i++) {
 
     arrVol.push({"name":volName, "phone":volPhone, "street":volStreet});
 
-};
+}
 
 
 // MESSAGE //
@@ -35,11 +35,11 @@ var message = "Number of Victims: " + victimCount + "\n" +
 message += "\nVictims\n";
 for(var i=0; i<victimCount; i++) {
     message += "Name: " + arrVictim[i].name + "\nPhone: " + arrVictim[i].phone + "\nStreet: " + arrVictim[i].street + "\n";
-};
+}
 
 message += "\nVolunteers\n";
 for(var i=0; i<volCount; i++) {
     message += "Name: " + arrVol[i].name+ "\nPhone: " + arrVol[i].phone + "\nStreet: " + arrVol[i].street + "\n";
-};
+}
 
 alert(message);
