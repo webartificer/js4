@@ -13,7 +13,6 @@ for(var i=0; i<victimCount; i++) {
     victimStreet.push(prompt("Please enter the victim's street number"));
 };
 
-
 // VOLUNTEERS //
 
 var volName = [];
@@ -32,16 +31,18 @@ for(var i=0; i<volCount; i++) {
 // MESSAGE //
 
 var message = "Number of Victims: " + victimCount + "\n" +
-    "Number of Volunteers" + volCount + "\n"
+    "Number of Volunteers: " + volCount + "\n";
 
-message += "\nVictims\n"
+message += "\nVictims\n";
 for(var i=0; i<victimCount; i++) {
-    message += "Name: " + victimName[i]+ "\nPhone: " + victimPhone[i] + "\nStreet: " + victimStreet[i] + "\n"
+    message += "Name: " + victimName[i]+ "\nPhone: " + victimPhone[i] + "\nStreet: " + victimStreet[i] + "\n";
 }
 
-message += "\nVolunteers\n"
+message += "\nVolunteers\n";
 for(var i=0; i<volCount; i++) {
-    message += "Name: " + volName[i]+ "\nPhone: " + volPhone[i] + "\nStreet: " + volStreet[i] + "\n"
+    message += "Name: " + volName[i]+ "\nPhone: " + volPhone[i] + "\nStreet: " + volStreet[i] + "\n";
 }
+
+
 
 alert(message);
